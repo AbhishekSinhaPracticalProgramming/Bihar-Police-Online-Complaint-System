@@ -1,0 +1,42 @@
+*{
+	padding:0px;
+	margin:0px;
+	
+	
+	
+}
+
+#container{
+background:linear-gradient(to left,cyan,yellow);
+
+	
+	height:auto;
+	width:auto;
+	width:98%;
+	height:auto;
+	left:5%;
+	margin:1%;
+	border-radius:30px;
+	
+
+}
+
+#head {
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-family: monotype corsiva;
+}
+
+
+#tab {
+    width: 70%;
+    height: 80%;
+    font-size: 30px;
+    border-radius: 30px;
+    border-color: red;
+    position: relative;
+    top: 10%;
+}

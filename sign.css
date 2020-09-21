@@ -1,0 +1,68 @@
+body {
+    background: url(emble.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1800px 800px;
+    height: auto;
+    width: auto;
+}
+
+
+#log {
+    height: 700px;
+    width: 700px;
+    background-color: black;
+    top: 10%;
+    left: 30%;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    border-radius: 100px;
+    opacity: 0.8;
+}
+
+
+ a{
+	
+	text-decoration:none;
+	color:GREEN;
+	
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+}
+
+#msg {
+    color: red;
+    top: 28%;
+    left: 50%;
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+td {
+    color: red;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.input {
+    height: 50px;
+    width: 350px;
+    border-bottom-color: red;
+    border-radius: 40px;
+    font-size: 24px;
+}
+#btn {
+    height: 50px;
+    width: 100px;
+    background-color: lightgreen;
+    font-size: 28px;
+    font-family: a;
+    color: red;
+    border-radius: 30px;
+}

@@ -1,0 +1,81 @@
+*{
+	
+	padding:0;
+	margin:0;
+	
+	
+}
+
+body{
+	background:linear-gradient(to left,cyan,yellow);
+	
+	
+	
+}
+th{
+	
+	color:red;
+	
+	
+}
+
+table{
+	
+	position:absolute;
+	left:25%;
+	top:35%;
+	height:50%;
+	width:60%;
+	font-size:30px;
+	
+}
+
+#pc1{
+	
+	height:30%;
+	position:absolute;
+	left:2%;
+	border-radius:30px;
+	
+}
+
+
+
+
+#pc2{
+	
+	height:30%;
+	position:absolute;
+	left:24%;
+	border-radius:30px;
+	
+}
+
+#pc3{
+	
+	height:30%;
+	position:absolute;
+	left:77%;
+	border-radius:30px;
+	
+}
+
+
+
+
+
+
+td{
+	
+	
+	padding:15px;
+	
+}
+
+a{
+	
+	
+	text-decoration:none;
+	color:darkblue;
+	
+}

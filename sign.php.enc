@@ -1,0 +1,103 @@
+<html>
+<head><title>Insert data</title>
+<link rel="stylesheet" href="sign.css">
+
+</head>
+<body>
+
+<div id="container">
+<div id="log">
+
+<img src="avatar123.png" class="avatar">
+<form class="login" action="" method="post">
+
+<table align ="center" style ="margin-top:100px";>
+
+<tr>
+<td> <h2>First Name</h2> </td><td><input type="text" class="input" name="fname" placeholder="First Name" required="required"/></td>
+</tr>
+
+<tr>
+<td> <h2>Last Name</h2> </td><td><input type="text" class="input" name="lname" placeholder="Last Name" required="required"/></td>
+</tr>
+
+<tr>
+<td> <h2>Country</h2> </td><td><input type="text" class="input" name="country" placeholder="Country" required="required"/></td>
+</tr>
+
+<tr>
+<td> <h2>Mobile</h2> </td><td><input type="text" class="input" name="mobile" placeholder="mobile" required="required"/></td>
+</tr>
+
+<tr>
+<td> <h2>Em@il</h2> </td><td><input type="text" class="input" name="email" placeholder="Email" required="required"/></td>
+</tr>
+<tr>
+<td><h2>Password: </h2></td><td><input type="password" class="input" name="password" placeholder="Enter Password" required="required"/></td>
+</tr>
+
+
+<td>
+<input type="radio" name="gender" value="male" checked> Male<br>
+</td>
+
+<td>
+<input type="radio" name="gender" value="male" > Female<br>
+</td>
+
+<td>
+<input type="radio" name="gender" value="male" > Other<br>
+</td>
+
+<tr>
+
+
+
+</tr>
+
+
+
+<tr>
+
+<td colspan ="2" align="center"><input type="submit" name="submit" id="btn" value="Sign in"/> </td>
+</tr>
+
+</table>
+
+
+<h2><a href="login.php">Click here for log in</a></h2>
+
+
+
+</form>
+
+</div>
+</div>
+</html>
+
+<?php
+$con=mysqli_connect('localhost','root','','auth');
+if(!empty($_POST['mobile']))
+{
+$mobile=$_POST['mobile'];
+//error_reporting(0);
+// $result=mysqli_query($con,"SELECT `mobile` FROM `users` WHERE `mobile`='$mobile'");
+// $count=mysqli_num_rows($result);
+
+$sql = "SELECT mobile FROM users WHERE mobile = $mobile ";
+$result = $con->query($sql);
+echo $sql;
+
+if ($result->num_rows > 0) 
+{
+    echo "<div id='msg'><span style=color:'red' >Already exist . </span></div>";
+
+}
+else{
+echo "<div id='msg'><span style=color:'green' >Available . </span></div>";
+}
+}
+
+
+
+?>

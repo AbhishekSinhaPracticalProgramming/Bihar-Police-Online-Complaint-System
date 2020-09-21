@@ -1,0 +1,61 @@
+
+
+
+ul{
+	list-style:none;
+	text-decoration:none;
+	margin:0px;
+	padding:0px;
+	
+	
+}
+
+
+ ul li{
+	list-style:none;
+	text-decoration:none;
+	width:239px;
+	height:52px;
+	text-align:center;
+	line-height:42px;
+	background-color:black;
+	opacity:.8;
+	float:left;
+	font-size:20px;
+	margin-right:5px;
+	border-radius:5px;
+	border-radius:5px;
+}
+ul li a{
+	
+	display:block;
+	color:white;
+	text-decoration:none;
+	
+	
+	
+}
+
+
+
+
+ul li:hover{
+	
+	background-color:green;
+}
+
+
+ul li ul li{
+	
+display:none;	
+	
+	
+}
+
+
+ul li:hover ul li{
+	
+	display:block;
+	
+	
+}
